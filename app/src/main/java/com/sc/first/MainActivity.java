@@ -1,9 +1,10 @@
-package com.example.first;
+package com.sc.first;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -26,5 +27,8 @@ public class MainActivity extends AppCompatActivity {
                 .centerCrop().
                 transition(DrawableTransitionOptions.withCrossFade(100))
                 .into(or);
+
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.myanim);
+        mgirl.startAnimation(myanim);
     }
 }

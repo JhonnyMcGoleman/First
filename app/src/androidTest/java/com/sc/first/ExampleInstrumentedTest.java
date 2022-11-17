@@ -1,4 +1,4 @@
-package com.example.first;
+package com.sc.first;
 
 import android.content.Context;
 
